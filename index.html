@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Изготовление - Тестовое Ашенбреннер Никита</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header container">
+        <h1 class="main-title">Изготовление</h1>
+    </header>
+
+    <main>
+        <section class="top">
+            <div class="top-wrapper container">
+                <div class="tabs">
+                    <input type="radio" class="tab" id="tab-1" name="tabs" checked>
+                    <label for="tab-1">
+                        <span class="tab-name">
+                            Услуги дизайна
+                        </span>
+                        <img src="/img/icons/icon-1.svg" alt="Иконка Услуги дизайна" class="tab-icon">
+                        <span class="tab-btn"><span class="tab-btn__icon" aria-label=">"></span></span>
+                    </label>
+
+                    <input type="radio" class="tab" id="tab-2" name="tabs">
+                    <label for="tab-2">
+                        <span class="tab-name">
+                            Изготовление рекламной продукции
+                        </span>
+                        <img src="/img/icons/icon-2.svg" alt="Иконка Изготовление рекламной продукции" class="tab-icon">
+                        <span class="tab-btn"><span class="tab-btn__icon" aria-label=">"></span></span>
+                    </label>
+
+                    <input type="radio" class="tab" id="tab-3" name="tabs">
+                    <label for="tab-3">
+                        <span class="tab-name">
+                            Изготовление вывесок и флагов
+                        </span>
+                        <img src="/img/icons/icon-3.svg" alt="Иконка Изготовление вывесок и флагов" class="tab-icon">
+                        <span class="tab-btn"><span class="tab-btn__icon" aria-label=">"></span></span>
+                    </label>
+
+                    <input type="radio" class="tab" id="tab-4" name="tabs">
+                    <label for="tab-4">
+                        <span class="tab-name">
+                           Изготовление вывесок и флагов
+                        </span>
+                        <img src="/img/icons/icon-4.svg" alt="Иконка Изготовление вывесок и флагов" class="tab-icon">
+                        <span class="tab-btn"><span class="tab-btn__icon" aria-label=">"></span></span>
+                    </label>
+                </div>
+
+                <div class="tab-content active" data-id="tab-1">
+                    <div class="tab-content__left">
+                        <p class="tab-content__text">
+                            В штате нашего рекламного агентства трудятся только профессиональные дизайнеры. Макет разрабатывается
+                            с учетом индивидуальных особенностей и пожеланий клиента.
+                            Поможем разработать <b>дизайн баннеров, вывесок, флагов а также фирменный стиля и именную продукцию компании.</b>
+                        </p>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Предоплата</h4>
+                            <ul>
+                                <li>Согласование стоимости работ</li>
+                                <li><b>50%</b> Предоплата</li>
+                                <li>Приступаем к работе</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Разработка и правки</h4>
+                            <ul>
+                                <li>Часовая ставка <b>- 1200 р/час</b></li>
+                                <li>Один макет <b>- 3000 р.</b></li>
+                                <li><b>Одна</b> итерация правок <b>- 500 р.</b></li>
+                            </ul>
+                        </div>
+
+                        <a href="#callback" class="btn">Заказать</a>
+                    </div>
+
+                    <div class="tab-content__right">
+                        <div class="slider">
+                            <div class="slides">
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-1.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-1.png" alt="Слайд 1" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-2.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-2.png" alt="Слайд 2" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-3.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-3.png" alt="Слайд 3" />
+                                </picture>
+                            </div>
+                            <div class="slider-arrows">
+                                <button class="slider-arrow prev" aria-label="Назад"></button>
+                                <button class="slider-arrow next" aria-label="Вперед"></button>
+                            </div>
+                            <div class="slider-dots">
+                                <button class="slider-dot active" aria-label="Слайд 1"></button>
+                                <button class="slider-dot" aria-label="Слайд 2"></button>
+                                <button class="slider-dot" aria-label="Слайд 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-id="tab-2">
+                    <div class="tab-content__left">
+                        <p class="tab-content__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada arcu arcu, et lacinia nisl elementum eget. Aliquam nibh dolor, elementum eu egestas sed, ultrices id odio. Aliquam eu rhoncus ipsum. Morbi imperdiet urna vel odio faucibus, ac pellentesque nisi convallis. Nam eu ex ut lacus tristique ultrices. Sed neque tortor, convallis ac felis non, gravida pulvinar dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pretium quis lacus id euismod. Nam mollis et arcu vitae ornare. Pellentesque mauris diam, placerat in diam vel, porta dapibus dui. Cras ut blandit tellus. Vestibulum laoreet sit amet diam id sodales. Morbi purus lacus, consectetur id pulvinar non, efficitur eu orci. Aliquam erat volutpat. Curabitur ornare sagittis pharetra. Quisque aliquet gravida finibus.
+                        </p>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Предоплата</h4>
+                            <ul>
+                                <li>Согласование стоимости работ</li>
+                                <li><b>50%</b> Предоплата</li>
+                                <li>Приступаем к работе</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Разработка и правки</h4>
+                            <ul>
+                                <li>Часовая ставка <b>- 1200 р/час</b></li>
+                                <li>Один макет <b>- 3000 р.</b></li>
+                                <li><b>Одна</b> итерация правок <b>- 500 р.</b></li>
+                            </ul>
+                        </div>
+
+                        <a href="#callback" class="btn">Заказать</a>
+                    </div>
+
+                    <div class="tab-content__right">
+                        <div class="slider">
+                            <div class="slides">
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-1.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-1.png" alt="Слайд 1" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-2.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-2.png" alt="Слайд 2" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-3.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-3.png" alt="Слайд 3" />
+                                </picture>
+                            </div>
+                            <div class="slider-arrows">
+                                <button class="slider-arrow prev" aria-label="Назад"></button>
+                                <button class="slider-arrow next" aria-label="Вперед"></button>
+                            </div>
+                            <div class="slider-dots">
+                                <button class="slider-dot" aria-label="Слайд 1"></button>
+                                <button class="slider-dot" aria-label="Слайд 2"></button>
+                                <button class="slider-dot" aria-label="Слайд 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-id="tab-3">
+                    <div class="tab-content__left">
+                        <p class="tab-content__text">
+                            Nunc tristique mauris turpis, sed euismod lorem consequat in. Aliquam at laoreet elit. Curabitur elit enim, condimentum at dolor feugiat, faucibus ultrices metus. Integer pharetra lectus et nisl iaculis, sed laoreet nibh hendrerit. Vivamus non eros id lacus tristique consequat. Curabitur vitae felis justo. Nulla urna justo, fermentum id finibus non, gravida a lectus. Curabitur mi ante, convallis sed condimentum quis, sagittis ac nisl. Etiam et urna justo. Praesent et varius turpis. Aenean accumsan vel ligula ac facilisis. Donec efficitur rhoncus mauris ac aliquam. Morbi interdum massa interdum nulla semper, eget consequat nisl varius.
+                        </p>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Предоплата</h4>
+                            <ul>
+                                <li>Согласование стоимости работ</li>
+                                <li><b>50%</b> Предоплата</li>
+                                <li>Приступаем к работе</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Разработка и правки</h4>
+                            <ul>
+                                <li>Часовая ставка <b>- 1200 р/час</b></li>
+                                <li>Один макет <b>- 3000 р.</b></li>
+                                <li><b>Одна</b> итерация правок <b>- 500 р.</b></li>
+                            </ul>
+                        </div>
+
+                        <a href="#callback" class="btn">Заказать</a>
+                    </div>
+
+                    <div class="tab-content__right">
+                        <div class="slider">
+                            <div class="slides">
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-1.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-1.png" alt="Слайд 1" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-2.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-2.png" alt="Слайд 2" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-3.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-3.png" alt="Слайд 3" />
+                                </picture>
+                            </div>
+                            <div class="slider-arrows">
+                                <button class="slider-arrow prev" aria-label="Назад"></button>
+                                <button class="slider-arrow next" aria-label="Вперед"></button>
+                            </div>
+                            <div class="slider-dots">
+                                <button class="slider-dot" aria-label="Слайд 1"></button>
+                                <button class="slider-dot" aria-label="Слайд 2"></button>
+                                <button class="slider-dot" aria-label="Слайд 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-id="tab-4">
+                    <div class="tab-content__left">
+                        <p class="tab-content__text">
+                            Quisque aliquet euismod risus, eget molestie ex sollicitudin ac. Mauris auctor semper commodo. Duis bibendum eu nisi eget convallis. Duis tincidunt quam at felis eleifend, eget porttitor ex molestie. Praesent sed quam tellus. Cras venenatis porttitor diam, nec pretium sem hendrerit feugiat. Nulla eget hendrerit neque. Morbi eu volutpat tellus, quis faucibus enim. Maecenas scelerisque, lacus ut suscipit posuere, erat massa suscipit sapien, id dictum mi turpis in quam. Nulla tristique purus at laoreet semper. Aenean orci quam, lacinia sed lectus id, pretium mollis lorem. Vivamus euismod sollicitudin turpis, vitae condimentum ipsum semper quis.
+                        </p>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Предоплата</h4>
+                            <ul>
+                                <li>Согласование стоимости работ</li>
+                                <li><b>50%</b> Предоплата</li>
+                                <li>Приступаем к работе</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content__list">
+                            <h4 class="tab-content__title">Разработка и правки</h4>
+                            <ul>
+                                <li>Часовая ставка <b>- 1200 р/час</b></li>
+                                <li>Один макет <b>- 3000 р.</b></li>
+                                <li><b>Одна</b> итерация правок <b>- 500 р.</b></li>
+                            </ul>
+                        </div>
+
+                        <a href="#callback" class="btn">Заказать</a>
+                    </div>
+
+                    <div class="tab-content__right">
+                        <div class="slider">
+                            <div class="slides">
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-1.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-1.png" alt="Слайд 1" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-2.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-2.png" alt="Слайд 2" />
+                                </picture>
+                                <picture class="slide">
+                                    <source srcset="/img/slider/slide-3.webp" type="image/webp" />
+                                    <img src="/img/slider/slide-3.png" alt="Слайд 3" />
+                                </picture>
+                            </div>
+                            <div class="slider-arrows">
+                                <button class="slider-arrow prev" aria-label="Назад"></button>
+                                <button class="slider-arrow next" aria-label="Вперед"></button>
+                            </div>
+                            <div class="slider-dots">
+                                <button class="slider-dot" aria-label="Слайд 1"></button>
+                                <button class="slider-dot" aria-label="Слайд 2"></button>
+                                <button class="slider-dot" aria-label="Слайд 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper container">
+            <div class="footer-menu">
+                <h2 class="footer-title">Контакты</h2>
+
+                <div class="footer-contacts">
+                    <h4 class="footer-contacts__title">Адрес</h4>
+                    <div class="footer-contacts__item">
+                        <img src="/img/icons/location.svg" alt="Адрес">
+                        г. Краснодар
+                        <br>ул. Бабушкина 110, офис 4
+                    </div>
+                </div>
+
+                <div class="footer-contacts">
+                    <h4 class="footer-contacts__title">Контакты</h4>
+                    <a href="mailto:ra-matina@mail.ru" class="footer-contacts__item">
+                        <img src="/img/icons/mail.svg" alt="Адрес">
+                        ra-matina@mail.ru
+                    </a>
+                    <a href="tel:88612463336" class="footer-contacts__item">
+                        <img src="/img/icons/phone.svg" alt="Адрес">
+                        8 (861) 246-33-36
+                    </a>
+                    <a href="tel:89014904646" class="footer-contacts__item">
+                        <img src="/img/icons/phone.svg" alt="Адрес">
+                        8 (901) 490-46-46
+                    </a>
+                </div>
+            </div>
+            <div class="action-box">
+                <h3 class="action-title">Заказать звонок</h3>
+                <form class="action-form" id="action-form">
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Имя" required>
+                    <div class="form-error">Введите ваше имя</div>
+                    <input class="form-input js-tel" type="text" name="phone" id="phone" placeholder="Номер телефона" required>
+                    <div class="form-error">Введите ваш номер телефона</div>
+                    <label class="checkbox action-checkbox">
+                        <input type="checkbox" name="checkbox" checked required>
+                        Согласие на обработку персональных данных
+                    </label>
+                    <div class="form-error">Вам нужно поставить галочку для отправки формы</div>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-bg"></div>
+    <div class="modal" id="form-modal">
+        <h2 class="modal-title">Ваша заявка успешно отправлена</h2>
+        <p class="modal-text">Наши специалисты скоро свяжутся с вами!</p>
+        <button class="modal-close"><img src="/img/icons/close.svg" alt="Закрыть"></button>
+    </div>
+</body>
+</html>
