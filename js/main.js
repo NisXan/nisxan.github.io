@@ -72,7 +72,7 @@ class Slider {
 document.addEventListener('DOMContentLoaded', () => {
     const sliders = Array.from(document.querySelectorAll('.slider')).map(
         slider => new Slider(slider)
-    );gi
+    );
 
     document.addEventListener('click', function(event) {
         const tabsContainer = event.target.closest('.tabs');
@@ -103,12 +103,57 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.modal-bg').classList.add('active');
     }
 
-    const form = document.getElementById('action-form')
+    const form = document.getElementById('action-form');
+    const nameInput = form.querySelector('#name');
+    const phoneInput = form.querySelector('#phone');
+    const checkbox = form.querySelector('input[type="checkbox"]');
+
+    function handlePhoneInput(event) {
+        const selectionStart = phoneInput.selectionStart;
+
+        let numbers = phoneInput.value.replace(/\D/g, '');
+        if (numbers.startsWith('7') && numbers.length === 1) numbers = '7';
+        if (!numbers.startsWith('7')) numbers = '7' + numbers;
+
+        if (numbers.length > 11) numbers = numbers.substring(0, 11);
+
+        let formatted = '+7';
+        if (numbers.length > 1) {
+            formatted += ' (' + numbers.substring(1, 4);
+        }
+        if (numbers.length >= 4) {
+            formatted += ') ' + numbers.substring(4, 7);
+        }
+        if (numbers.length >= 7) {
+            formatted += '-' + numbers.substring(7, 9);
+        }
+        if (numbers.length >= 9) {
+            formatted += '-' + numbers.substring(9, 11);
+        }
+
+        phoneInput.value = formatted;
+
+        const isAdding = (event.inputType &&
+                event.inputType.includes('insert')) ||
+            numbers.length < phoneInput.value.length;
+
+        if (isAdding) {
+            const newPosition = formatted.length;
+            phoneInput.setSelectionRange(newPosition, newPosition);
+        } else {
+            phoneInput.setSelectionRange(selectionStart, selectionStart);
+        }
+    }
+
+    phoneInput.addEventListener('input', handlePhoneInput);
+    phoneInput.addEventListener('keydown', function(e) {
+        // Блокируем удаление первых символов
+        if ([8, 46].includes(e.keyCode) && phoneInput.selectionStart < 4) {
+            e.preventDefault();
+        }
+    });
     document.getElementById('action-form').addEventListener('submit', async function(e) {
         e.preventDefault();
-        const nameInput = form.querySelector('#name');
-        const phoneInput = form.querySelector('#phone');
-        const checkbox = form.querySelector('input[type="checkbox"]');
 
         function showError(errorElement) {
             errorElement.classList.add('error');
